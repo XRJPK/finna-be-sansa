@@ -2,7 +2,7 @@
 #AutoIt3Wrapper_Compression=4
 #AutoIt3Wrapper_Res_Fileversion=0.1.1.4
 #AutoIt3Wrapper_Res_Fileversion_AutoIncrement=p
-#AutoIt3Wrapper_Res_LegalCopyright=Â© Th. Meyer 2013
+#AutoIt3Wrapper_Res_LegalCopyright=© Th. Meyer 2013
 #EndRegion ;**** Directives created by AutoIt3Wrapper_GUI ****
 #include <ButtonConstants.au3>
 #include <GUIConstantsEx.au3>
@@ -18,7 +18,7 @@ $StatusBar1 = _GUICtrlStatusBar_Create($MSI)
 _GUICtrlStatusBar_SetMinHeight($StatusBar1, 33)
 $Group1 = GUICtrlCreateGroup("Summary Information", 328, 8, 257, 361)
 GUICtrlCreateGroup("", -99, -99, 1, 1)
-$Button1 = GUICtrlCreateButton("MSI Ã¶ffnen ", 24, 32, 75, 25)
+$Button1 = GUICtrlCreateButton("MSI öffnen ", 24, 32, 75, 25)
 $Button2 = GUICtrlCreateButton("MSI schreiben", 24,60, 80, 25)
 $Button3 = GUICtrlCreateButton("Reverse GUID", 24,94, 80, 25)
 $Title = GUICtrlCreateLabel("Title", 344, 32, 24, 17)
@@ -106,12 +106,12 @@ While 1
 			Exit
 
 	Case $MenuItem2
-			MsgBox (0, "Ãœber", "MSI Toolbox c Th. Meyer & Fr. Minklei 2013", 10)
-	Case $Button1 ; MSI Ã¶ffnen
+			MsgBox (0, "Über", "MSI Toolbox c Th. Meyer & Fr. Minklei 2013", 10)
+	Case $Button1 ; MSI öffnen
 			;==========================================================================================================================
-			;  MSI Ã–ffnen Dialog, es werden nur MSIs angezeigt und anschlieÃŸend wird der Pfad in die $verzeichnis Variable gespeichert!
+			;  MSI Öffnen Dialog, es werden nur MSIs angezeigt und anschließend wird der Pfad in die $verzeichnis Variable gespeichert!
 			;==========================================================================================================================
-			$verzeichnis = FileOpenDialog ("Bitte MSI wÃ¤hlen", $verzeichnis, "Installer Files (*.msi;*.wsi) | All Files (*.*)")
+			$verzeichnis = FileOpenDialog ("Bitte MSI wählen", $verzeichnis, "Installer Files (*.msi;*.wsi) | All Files (*.*)")
 			;MsgBox(0, "Debug", "Das Verzechnis ist: "  & $verzeichnis, 10)
 
 			$MSI     = ObjCreate("WindowsInstaller.Installer")
